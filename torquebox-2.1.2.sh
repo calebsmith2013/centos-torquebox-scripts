@@ -5,6 +5,7 @@ TORQUEBOX_ZIP=torquebox-$TORQUEBOX_VERSION.zip
 TORQUEBOX_PROFILE=/etc/profile.d/torquebox.sh
 
 yum install java-1.7.0-openjdk
+yum groupinstall "Development Tools" 
 cd /opt
 if [ ! -f $TORQUEBOX_ZIP ]
 then
